@@ -27,18 +27,23 @@ p
     font-family: $fontTile
 
 
+
+    
+
+@mixin navClass
+        font-family: $fontTile
+        font-size: $taille
+        font-weight: $weight
+       
 label
-    font-family: $fontTile
-    font-weight: $weight
-    font-size: $taille
+    @include navClass
+
+.navbar-nav
+    @include navClass
+    color: white       
 
 ul
-    li
-        a
-            font-family: $fontTile
-            font-size: $taille
-            font-weight: $weight
-
+    width: 100%
 .title
      font-family: $fontTile
      font-weight: $weight
@@ -49,3 +54,5 @@ ul
     float: right
     margin-top: 20px
     margin-bottom: 50px
+
+
